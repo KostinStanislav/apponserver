@@ -1,0 +1,27 @@
+{
+  "name": "wow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KostinStanislav/apponserver.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KostinStanislav/apponserver/issues"
+  },
+  "homepage": "https://github.com/KostinStanislav/apponserver#readme"
+}
