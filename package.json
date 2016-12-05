@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/KostinStanislav/apponserver/issues"
   },
-  "homepage": "https://github.com/KostinStanislav/apponserver#readme"
+  "homepage": "https://github.com/KostinStanislav/apponserver#readme",
+  "readme": "README.md"
 }
