@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    title!= title
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link(href="/styles.css", rel="stylesheet",type='text/css')
+  body
+    h1(align='center')= message
+    div.container
+        div.table-responsive
+            table.table
+                thead
+                    tr.danger
+                        th(colspan=5).text-center= message
+                tbody
+                    tr.active
+                            td.text-right="ID:"
+                            each item in db 
+                                td.text-center=item.id
+                    tr.info
+                            td.text-right="EMAIL:"
+                            each item in db
+                                td.text-center= item.email
+                    tr.success
+                            td.text-right="Last Name:"
+                            each item in db
+                                td.text-center= item.lastname
+                    tr.success
+                            td.text-right="First Name:"
+                            each item in db
+                                td.text-center= item.firstname
+    
+   div
+            ul
+            each item in db
+                li.lister=item.id  
+            ul
+            each item in db
+                li=item.email
+            ul
+            each item in db
+                li=item.firstname
+            ul
+            each item in db
+                li=item.lastname
